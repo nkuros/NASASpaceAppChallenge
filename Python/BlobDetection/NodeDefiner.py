@@ -6,43 +6,46 @@ class StarDetector(object):
     def __init__(self, address="Hubble_Pics/01_veritable mix of different galaxies.jpg"):
 
         # Read image
-        image = cv2.imread(address, cv2.IMREAD_GRAYSCALE)
+        self.im = cv2.imread(address, cv2.IMREAD_GRAYSCALE)
+        #im2 = cv2.imread(address)
         # Filter Noise
-        im = cv2.medianBlur(image, 9)
+        self.im = cv2.medianBlur(self.im, 9)
 
         # Invert image
-        im = cv2.bitwise_not(im)
+        self.im = cv2.bitwise_not(self.im)
 
         # Set parameters for detection
-        params = cv2.SimpleBlobDetector_Params()
+        self.params = cv2.SimpleBlobDetector_Params()
 
         # grayscale values
-        params.minThreshold = 20
-        params.maxThreshold = 255
+        self.params.minThreshold = 20
+        self.params.maxThreshold = 255
 
         # exclude alongated circles aka galaxies
         # params.filterByInertia = True
         # params.minInertiaRatio = 0.6
 
         # Set up minimum area threshold.
-        params.filterByArea = True
-        params.minArea = 1000
+        self.params.filterByArea = True
+        self.params.minArea = 100
 
         # Set up the detector with default parameters.
         # detector = cv2.SimpleBlobDetector_create()
 
         # Set up the detector with parameters.
         # Detect blobs.
-        detector = cv2.SimpleBlobDetector_create(params)
-        keypoints = detector.detect(im)
+        self.detector = cv2.SimpleBlobDetector_create(self.params)
+    def calculate(self):
+
+        keypoints = self.detector.detect(self.im)
 
         starsize = []
         for elements in keypoints:
             starsize.append(elements.size)
         starsize.sort(reverse=True)
-        print(starsize)
+        #print(starsize)
         tenBiggest = []
-        for i in range(15):
+        for i in range(45):
             for j in range(len(keypoints)):
                 if starsize[i] == keypoints[j].size:
                     tenBiggest.append(keypoints[j])
@@ -56,5 +59,6 @@ class StarDetector(object):
         # cv2.imshow("Keypoints", im_with_keypoints)
         # cv2.imwrite("img.jpg",im_with_keypoints)
         #cv2.waitKey(0)
+        #return keypoints
         return tenBiggest
 
