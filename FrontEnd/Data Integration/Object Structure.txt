@@ -1,0 +1,44 @@
+Class Response{
+	Integer systemId
+	Blob base64
+	String systemInfo
+	List<Node> nodes
+	List<Destination> destinations
+}
+
+Class Node{
+	coordinatesX
+	coordinatesY
+	String name
+	String info
+	List<Action> actions
+}
+
+Class Action{
+	String name
+	List<Cost> costs
+	List<Benefit> benefits
+	List<Artifact> artifacts
+
+}
+
+Class Cost{
+	String type
+	Decimal value
+}
+
+Class Benefit{
+	String type
+	Decimal value
+}
+
+Class Artifact{
+	String name
+	Decimal probability
+}
+
+Class Destination{
+	Integer systemId
+	String direction
+	List<Cost> costs
+}
