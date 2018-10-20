@@ -2,7 +2,7 @@ Class Response{
 	Integer systemId
 	Blob base64
 	String systemInfo
-	List<Node> nodes
+	List<Node> 	
 	List<Destination> destinations
 }
 
