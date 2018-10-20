@@ -1,0 +1,110 @@
+Request: 
+{
+	systemId: 47
+}
+
+Response: 
+{
+	systemId: 47,
+	base64Image: blob,
+	systemInfo: 'informações sobre o sistema mostrado',
+	nodes: [{
+		coordinatesX: 120,
+		coordinatesY: 80,
+		name: 'supernova',
+		info: 'informações sobre o nó',
+		actions: [{
+			name: 'Explorar planetas subjacentes',
+			costs: [{
+				type: 'energy',
+				value: 10
+			},
+			{
+				type: 'fuel',
+				value: 5
+			}],
+			benefits: [{
+				type: 'metal',
+				value: 100
+			},
+			{
+				type: 'treasureHunt',
+				value: 1
+			}],
+			artifacts: [{
+				name: 'Lixo espacial',
+				probability: 0.8
+			},
+			{
+				name: 'Indícios de vida inteligente',
+				probability: 0.05
+			},
+			{
+				name: 'Liga de metal especial',
+				probability: 0.15
+			}]
+		},
+		{
+			name: 'Construir Nave',
+			costs: [{
+				type: 'metal',
+				value: 500
+			}],
+			benefits: [{
+				type: 'starShip',
+				value: 1
+			}]
+		}]
+	},
+	{
+		//OtherNodes//
+	}],
+	destinations: [{
+		destinationId: 46,
+		direction: 'S',
+		costs: [{
+			type: 'energy',
+			value: 10
+		},
+		{
+			type: 'fuel',
+			value: 5
+		}]
+	},
+	{
+		destinationId: 45,
+		direction: 'N',
+		costs: [{
+			type: 'energy',
+			value: 10
+		},
+		{
+			type: 'fuel',
+			value: 5
+		}]
+	},
+	{
+		destinationId: 48,
+		direction: 'W',
+		costs: [{
+			type: 'energy',
+			value: 10
+		},
+		{
+			type: 'fuel',
+			value: 5
+		}]
+	},
+	{
+		destinationId: 49,
+		direction: 'E',
+		costs: [{
+			type: 'energy',
+			value: 10
+		},
+		{
+			type: 'fuel',
+			value: 5
+		}]
+	}]
+}
