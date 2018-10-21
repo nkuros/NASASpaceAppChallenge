@@ -1,4 +1,4 @@
-app.controller('MainCtrl', function($location, $scope, nodeService)
+app.controller('MainCtrl', function($rootScope, $location, $scope, nodeService)
 {
 	var fileName = 'app/img/17_Cluster_Arches';
 	var nodeJson = '';
@@ -16,13 +16,15 @@ app.controller('MainCtrl', function($location, $scope, nodeService)
 			var node = nodes[i];
 			//console.log(node);
 			node.name = 'Nome da estrela ' + i;
+			node.multiplier = Math.random() * 0.3 + 0.85;
 			var link = $('<a>', {href:"/#node", id:"img"+i});
 			link.click(function(e){
 				var index = this.id.substring(3, this.id.length);
 				var node1 = JSON.parse(JSON.stringify(nodes[index]));
+				
 				console.log(node1);
 				nodeService.setNode(node1);
-				
+				$rootScope.$broadcast('changeNode', node1);
 			})
 			var image = $('<img>',{ class:'nodeImage', src:'app/img/ring.png'});
 			image.css('left', node.x+2).css('top', node.y-14).css('position', 'absolute').css('z-index', '99').show();

@@ -1,6 +1,10 @@
 <h1>Node</h1>
-{{message}}<br>
+<br>
 Nome do nó: {{node.name || ''}}<br>
 Tamanho: {{((node.size || 0)).toFixed(2)}}<br>
-Custo em Materiais: {{((node.size || 0) * 1.2).toFixed(2)}}<br>
-Recompensa: {{((node.size || 0) * 3).toFixed(2)}}<br>
+Custo em Combustível: {{((node.size || 0) * 1).toFixed(2)}}<br>
+<b>Recompensa:</b><br>
+ {{((node.size || 0) * 3 * (node.multiplier || 0)).toFixed(2)}} Ciência<br>
+ {{((node.size || 0) * 2 * (node.multiplier || 0)).toFixed(2)}} Materiais<br>
+<br>
+<button class="btn btn-large btn-default" ng-click='exploreNode()'>Explorar</button>

@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="content-language" content="pt-br" />
-		<title>AngularJS: Single Page com ngView e ngRoute</title>
+		<title>Kardashev Quest</title>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		
@@ -22,12 +22,6 @@
 	</head>
 
 	<body>
-    
-		<img src="" id="marker" style="display: none; position: absolute; z-index:9999" />
-
-		
-
-			<!--div ng-view></div-->
 		<div class="container">
 
 			<div class="col-md-9" ng-controller="MainCtrl">
@@ -46,6 +40,13 @@
 			<div class="col-md-3">
 				<!-- usa angular para renderizar o menu -->
 				<div ng-view></div>
+				<br>
+				<div ng-controller="ResourceCtrl">
+					Ciência: {{science}}<br>
+					Material: {{material}}<br>
+					Combustível: {{fuel}}<br>
+					Tempo: {{time}}<br>
+				</div>
 			</div>
 
 		</div>
@@ -55,10 +56,12 @@
 
 		<script src="app/app.js"></script>
 		<script src="app/services/nodeServices.js"></script>
+		<script src="app/services/resourceServices.js"></script>
 		<script src="app/controllers/NodeCtrl.js"></script>
 		<script src="app/controllers/MenuCtrl.js"></script>
 		<script src="app/controllers/MainCtrl.js"></script>
 		<script src="app/controllers/HomeCtrl.js"></script>
+		<script src="app/controllers/ResourceCtrl.js"></script>
 		  
 		<script type="text/javascript">
 		
