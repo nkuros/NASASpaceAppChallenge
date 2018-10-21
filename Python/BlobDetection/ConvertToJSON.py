@@ -7,13 +7,17 @@ class Node:
     def __init__(self):
         coord = StarDetector("img2.jpg").calculate()
         output = []
+        print(output)
         for i in coord:
 
             output.append({'x': i.pt[0], 'y': i.pt[1], 'size': i.size})
 
         with open('test_json.json', 'w') as write_file:
             json.dump(output, write_file)
+            print("oi gui")
 
 
 pass
+if __name__ == "__main__":
+    node =Node()
 

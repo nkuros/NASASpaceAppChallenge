@@ -4,12 +4,11 @@ import numpy as np;
 
 class StarDetector(object):
     def __init__(self, address="Hubble_Pics/01_veritable mix of different galaxies.jpg"):
-
         # Read image
         self.im = cv2.imread(address, cv2.IMREAD_GRAYSCALE)
-        im2 = cv2.imread(address)
+        self.im2 = cv2.imread(address)
         # Filter Noise
-        #self.im = cv2.medianBlur(self.im, 9)
+        self.im = cv2.medianBlur(self.im, 9)
 
         # Invert image
         self.im = cv2.bitwise_not(self.im)
@@ -36,7 +35,6 @@ class StarDetector(object):
         # Detect blobs.
         self.detector = cv2.SimpleBlobDetector_create(self.params)
     def calculate(self):
-
         keypoints = self.detector.detect(self.im)
 
         starsize = []
@@ -45,7 +43,7 @@ class StarDetector(object):
         starsize.sort(reverse=True)
         #print(starsize)
         tenBiggest = []
-        for i in range(45):
+        for i in range(40):
             for j in range(len(keypoints)):
                 if starsize[i] == keypoints[j].size:
                     tenBiggest.append(keypoints[j])
