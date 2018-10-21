@@ -2,12 +2,12 @@
 <br>
 Nome do nó: {{node.name || ''}}<br>
 Tamanho: {{((node.size || 0)).toFixed(2)}}<br>
-Dist?ncia: {{((node.distance || 0) * 1).toFixed(2)}}<br>
+Distância: {{((node.distance || 0) * 1).toFixed(2)}}<br>
 Terraformagem: {{node.duration}} anos<br>
 
-Pesquisa: {{node.science_rate || 0}} ci?ncia/ano<br>
-Explora??o: {{node.materials_rate || 0}} materiais/ano<br>
+Pesquisa: {{node.science_rate || 0}} ciência/ano<br>
+Exploração: {{node.material_rate || 0}} materiais/ano<br>
 
-Terraformado: {{node.explored?"Sim":"N?o"}}
+Terraformado: {{node.explored?"Sim":"Não"}}<br>
 
-<button class="btn btn-large btn-default" ng-click='exploreNode()'>Explorar</button>
+<button class="btn btn-large btn-default" ng-click='exploreNode()' ng-disabled="{{node.explored}}">Explorar</button>

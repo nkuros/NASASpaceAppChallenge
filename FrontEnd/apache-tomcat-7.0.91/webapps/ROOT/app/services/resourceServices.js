@@ -22,8 +22,12 @@ app.service('resourceServices', function() {
 	}
 	
 	var reduceFuel = function(distance){
-		fuel -= parseFloat(distance) * fuel_consumption / speed;
+		fuel -= necessaryFuel(distance);
 		return fuel;
+	}
+	
+	var necessaryFuel = function(distance){
+		return parseFloat(distance) * fuel_consumption / speed;
 	}
 	
 	var refuel = function(){
@@ -66,13 +70,13 @@ app.service('resourceServices', function() {
 		x = newX;
 	}
 	var setY = function(newY){
-		y = newY
+		y = newY;
 	}
 	var increaseScienceRate = function(increment){
-		science_rate += parseFloat(increment)
+		science_rate += parseFloat(increment);
 	}
 	var increaseMaterialRate = function(increment){
-		material_rate += parseFloat(increment)
+		material_rate += parseFloat(increment);
 	}
 	var getSpeed = function(){
 		return speed;
@@ -81,7 +85,7 @@ app.service('resourceServices', function() {
 	var getScienceRate = function(){
 		return science_rate;
 	}
-	var = getMaterialRate = function(){
+	var getMaterialRate = function(){
 		return material_rate;
 	}
 		
@@ -94,6 +98,7 @@ app.service('resourceServices', function() {
     increaseScience: increaseScience,
     increaseMaterial: increaseMaterial,
     reduceFuel: reduceFuel,
+    necessaryFuel: necessaryFuel,
     refuel: refuel,
     increaseTime: increaseTime,
     getScience: getScience,
@@ -104,7 +109,11 @@ app.service('resourceServices', function() {
 	getY: getY,
 	getScienceRate: getScienceRate,
 	getMaterialRate: getMaterialRate,
-	getSpeed: getSpeed
+	getSpeed: getSpeed,
+	setX: setX,
+	setY: setY,
+	increaseMaterialRate: increaseMaterialRate,
+	increaseScienceRate: increaseScienceRate
   };
 	
 });

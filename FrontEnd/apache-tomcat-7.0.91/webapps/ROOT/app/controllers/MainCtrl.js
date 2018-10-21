@@ -19,7 +19,7 @@ app.controller('MainCtrl', function($rootScope, $location, $scope, nodeService)
 		$.ajax({
 			type: "POST",
 			data: "Hubble_Pics/"+fileName+'.jpg',
-			url: "http://192.168.3.81:8082/",
+			url: "http://localhost:8082/",
 			dataType: "text"
 		}).done(function (res) {
 			console.log(res);
@@ -31,11 +31,14 @@ app.controller('MainCtrl', function($rootScope, $location, $scope, nodeService)
 				//console.log(node);
 				node.name = 'Nome da estrela ' + i;
 				node.multiplier = Math.random() * 0.3 + 0.85;
+				if(node.explored==null){ 
+					node.explored = false;
+				}
 				var link = $('<a>', {href:"/#node", id:"img"+i, class:"rings"});
 				link.click(function(e){
 					var index = this.id.substring(3, this.id.length);
 					var node1 = JSON.parse(JSON.stringify(nodes[index]));
-					
+					node1.index = index;
 					console.log(node1);
 					nodeService.setNode(node1);
 					$rootScope.$broadcast('changeNode', node1);

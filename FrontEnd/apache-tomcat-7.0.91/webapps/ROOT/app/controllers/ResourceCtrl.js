@@ -16,6 +16,11 @@ app.controller('ResourceCtrl', function($location, $scope, resourceServices, $ro
 	}); 
 	
 	$scope.nextSystem = function(){
-		$rootScope.$broadcast('newSystem', 'Next System');
+		if($scope.fuel > 50){
+			$rootScope.$broadcast('newSystem', 'Next System');
+		}
+		else{
+			alert('você não possui combustível suficiente para realizar essa operação');
+		}
 	}
 })
