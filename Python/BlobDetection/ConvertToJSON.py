@@ -9,7 +9,7 @@ class Node:
         self.output = []
         for i in coord:
 
-            self.output.append({'x': i.pt[0], 'y': i.pt[1], 'size': i.size})
+            self.output.append({"x": i.pt[0], "y": i.pt[1], "size": i.size})
     def sendJSON(self):
         with open('test_json.json', 'w') as write_file:
             json.dump(self.output, write_file)

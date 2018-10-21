@@ -7,6 +7,7 @@ class StarDetector(object):
         # Read image
         self.im = cv2.imread(address, cv2.IMREAD_GRAYSCALE)
         self.im2 = cv2.imread(address)
+        self.im = cv2.resize(self.im, (800, 600))
         # Filter Noise
         self.im = cv2.medianBlur(self.im, 9)
 
@@ -43,7 +44,9 @@ class StarDetector(object):
         starsize.sort(reverse=True)
         #print(starsize)
         tenBiggest = []
-        for i in range(40):
+        for i in range(len(keypoints)):
+            if i >=40:
+                break
             for j in range(len(keypoints)):
                 if starsize[i] == keypoints[j].size:
                     tenBiggest.append(keypoints[j])
@@ -51,11 +54,11 @@ class StarDetector(object):
 
         # Draw detected blobs as red circles.
         #cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS ensures the size of the circle corresponds to the size of blob
-        im_with_keypoints = cv2.drawKeypoints(self.im2, tenBiggest, np.array([]), (0, 0, 255),
-                                             cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+        #im_with_keypoints = cv2.drawKeypoints(self.im2, tenBiggest, np.array([]), (0, 0, 255),
+        #                                     cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
         # Show keypoints
         #cv2.imshow("Keypoints", im_with_keypoints)
-        cv2.imwrite("img.jpg",im_with_keypoints)
+        #cv2.imwrite("img.jpg",im_with_keypoints)
         #cv2.waitKey(0)
         #return keypoints
         return tenBiggest
