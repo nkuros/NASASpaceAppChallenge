@@ -1,4 +1,4 @@
-app.controller('ResourceCtrl', function($location, $scope, resourceServices){
+app.controller('ResourceCtrl', function($location, $scope, resourceServices, $rootScope){
 	$scope.science = resourceServices.getScience();
 	$scope.material = resourceServices.getMaterial();
 	$scope.fuel = resourceServices.getFuel();
@@ -10,4 +10,8 @@ app.controller('ResourceCtrl', function($location, $scope, resourceServices){
 		$scope.fuel = resourceServices.getFuel();
 		$scope.time = resourceServices.getTime();
 	}); 
+	
+	$scope.nextSystem = function(){
+		$rootScope.$broadcast('newSystem', 'Next System');
+	}
 })

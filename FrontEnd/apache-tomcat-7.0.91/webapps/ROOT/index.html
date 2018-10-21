@@ -28,24 +28,26 @@
 				<div id="hidden-images">
 
 				</div>	
-				<a href="/#home" class="btn btn-default btn-lg absolute-left">
+				<!--a href="/#home" class="btn btn-default btn-lg absolute-left">
 					<span class="glyphicon glyphicon-arrow-left"></span> Voltar
 				</a>
 				<a href="/#menu" class="btn btn-default btn-lg absolute-right">
 					<span class="glyphicon glyphicon-th-list"></span> Menu
-				</a>
-				<img src="{{img}}" style="height:60rem; width:80rem" id="map"/>
+				</a-->
+				<a href="/#home" style="cursor:default;"><img src="{{img}}" style="height:60rem; width:80rem" id="map"/></a>
 			</div>
 
 			<div class="col-md-3">
 				<!-- usa angular para renderizar o menu -->
-				<div ng-view></div>
+				<div ng-view style="height:400px;overflow-y:auto;"></div>
 				<br>
 				<div ng-controller="ResourceCtrl">
 					Ciência: {{science}}<br>
 					Material: {{material}}<br>
 					Combustível: {{fuel}}<br>
 					Tempo: {{time}}<br>
+					<button class="btn btn-large btn-default" ng-click='nextSystem()' ng-disabled="{{fuel < 50}}">Próximo Sistema</button><br>
+					Custo: 50 Combustível
 				</div>
 			</div>
 
