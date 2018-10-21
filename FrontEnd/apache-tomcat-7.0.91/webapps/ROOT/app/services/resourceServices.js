@@ -32,8 +32,10 @@ app.service('resourceServices', function() {
 	}
 	
 	var increaseTime = function(increment){
-		time += parseFloat(increment);
-		return time;
+		increment = parseFloat(increment);
+		time += increment;
+		increaseScience(increment);
+		increaseMaterial(increment);
 	}
 	
 	var getScience = function(){
@@ -72,7 +74,16 @@ app.service('resourceServices', function() {
 	var increaseMaterialRate = function(increment){
 		material_rate += parseFloat(increment)
 	}
+	var getSpeed = function(){
+		return speed;
+	}
 	
+	var getScienceRate = function(){
+		return science_rate;
+	}
+	var = getMaterialRate = function(){
+		return material_rate;
+	}
 		
 	
 	
@@ -92,7 +103,8 @@ app.service('resourceServices', function() {
 	getX: getX,
 	getY: getY,
 	getScienceRate: getScienceRate,
-	getMaterialRate: getMaterialRate
+	getMaterialRate: getMaterialRate,
+	getSpeed: getSpeed
   };
 	
 });
