@@ -5,13 +5,14 @@ import numpy as np;
 # Read image
 im = cv2.imread("Hubble_Pics/hubble_friday_05292015.jpg", cv2.IMREAD_GRAYSCALE)
 im2 = cv2.imread("Hubble_Pics/hubble_friday_05292015.jpg")
+imcopy = cv2.imread("Hubble_Pics/hubble_friday_05292015.jpg")
 #Filter Noise
 im = cv2.medianBlur(im,9)
 
 #Invert image
 im= cv2.bitwise_not(im)
 
-
+im2 = cv2.resize(im2,(800,600))
 # Set parameters for detection
 params = cv2.SimpleBlobDetector_Params()
 
@@ -49,9 +50,10 @@ for i in range(10):
 
 # Draw detected blobs as red circles.
 # cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS ensures the size of the circle corresponds to the size of blob
-im_with_keypoints = cv2.drawKeypoints(im2, keypoints, np.array([]), (0, 0, 255),
+im_with_keypoints = cv2.drawKeypoints(imcopy, keypoints, np.array([]), (0, 0, 255),
                                       cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
 # Show keypoints
 cv2.imshow("Keypoints", im_with_keypoints)
 cv2.imwrite("img.jpg",im_with_keypoints)
+cv2.imwrite("img2.jpg",im2)
 cv2.waitKey(0)
