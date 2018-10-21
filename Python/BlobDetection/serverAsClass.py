@@ -1,6 +1,6 @@
 import KinectServer
 
-server = KinectServer.KinectServer()
+server = KinectServer.MessageServer()
 
 while True:
 	server.keepListening()

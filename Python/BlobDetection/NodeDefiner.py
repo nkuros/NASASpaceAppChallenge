@@ -3,7 +3,7 @@ import numpy as np;
 
 
 class StarDetector(object):
-    def __init__(self, address="Hubble_Pics/01_veritable mix of different galaxies.jpg"):
+    def __init__(self, address="img2.jpg"):
         # Read image
         self.im = cv2.imread(address, cv2.IMREAD_GRAYSCALE)
         self.im2 = cv2.imread(address)
@@ -54,9 +54,9 @@ class StarDetector(object):
         im_with_keypoints = cv2.drawKeypoints(self.im2, tenBiggest, np.array([]), (0, 0, 255),
                                              cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
         # Show keypoints
-        cv2.imshow("Keypoints", im_with_keypoints)
+        #cv2.imshow("Keypoints", im_with_keypoints)
         cv2.imwrite("img.jpg",im_with_keypoints)
-        cv2.waitKey(0)
+        #cv2.waitKey(0)
         #return keypoints
         return tenBiggest
 

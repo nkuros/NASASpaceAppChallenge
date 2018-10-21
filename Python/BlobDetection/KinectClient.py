@@ -4,7 +4,7 @@ import ast
 
 class KinectClient(object):
     """docstring for KinectClient"""
-    def __init__(self, hostname='localhost', port=10013):
+    def __init__(self, hostname='localhost', port=10014):
         super(KinectClient, self).__init__()
         self.hostname = hostname
         self.port = port
@@ -12,8 +12,8 @@ class KinectClient(object):
         self.sock = socket.create_connection((self.hostname, self.port))
 
     def requestPositionPixelDetour(self):
-        request = "['pos','pix','det']"
-        print ("requesting: %s" % request)
+        request = '[img2.jpg]'
+        print("requesting:%s" %request)
         self.sock.sendall(request.encode('utf-8'))
         full_response = ""
         while not full_response.endswith("]"):
@@ -27,3 +27,6 @@ class KinectClient(object):
 
     def safeExit(self):
         self.sock.close()
+
+if __name__ == "__main__":
+    kinect =KinectClient().requestPositionPixelDetour()
