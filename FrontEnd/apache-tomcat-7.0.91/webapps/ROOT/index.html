@@ -17,12 +17,25 @@
 				position:absolute;
 				z-index:100;
 			}
+			.imgbox {
+				display: grid;
+				height: 100%;
+			}
+			.center-fit {
+				max-width: 100%;
+				max-height: 100vh;
+				margin: auto;
+			}
 		</style>
 		
 	</head>
 
 	<body>
-		<div class="container">
+		<div class="landing imgbox" id="landing">
+		<a onclick="startGame()"><img src="/app/img/logo.png" class="center-fit"/></a>
+			<!--button class="btn btn-large btn-default" onclick="startGame()">Iniciar</button><br><br-->
+		</div>
+		<div class="container" id="container" style="display:none !important">
 
 			<div class="col-md-9" ng-controller="MainCtrl">
 				<div id="hidden-images">
@@ -42,11 +55,12 @@
 				<div ng-view style="height:400px;overflow-y:auto;"></div>
 				<br>
 				<div ng-controller="ResourceCtrl">
+					<b>Recursos:</b><br>
 					Ciência: {{science}}<br>
 					Material: {{material}}<br>
 					Combustível: {{fuel}}<br>
-					Tempo: {{time}}<br>
-					<button class="btn btn-large btn-default" ng-click='nextSystem()' ng-disabled="{{fuel < 50}}">Próximo Sistema</button><br>
+					Tempo: {{time}}<br><br>
+					
 					Custo: 50 Combustível
 				</div>
 			</div>
@@ -66,7 +80,10 @@
 		<script src="app/controllers/ResourceCtrl.js"></script>
 		  
 		<script type="text/javascript">
-		
+			function startGame(){
+				$("#landing").hide();
+				$("#container").show();
+			}
 		</script>
 	</body>
 </html>
