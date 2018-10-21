@@ -38,3 +38,19 @@ Oct 21, 2018 11:28:55 AM org.apache.catalina.core.ApplicationContext log
 INFORMA합ES: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1c7a56a')
 Oct 21, 2018 11:28:55 AM org.apache.catalina.core.ApplicationContext log
 INFORMA합ES: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1db59bc')
+out 21, 2018 4:59:13 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: ContextListener: contextInitialized()
+out 21, 2018 4:59:13 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: SessionListener: contextInitialized()
+out 21, 2018 4:59:13 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1ab089f')
+out 21, 2018 4:59:13 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@194baf')
+out 21, 2018 5:14:08 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: ContextListener: contextInitialized()
+out 21, 2018 5:14:08 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: SessionListener: contextInitialized()
+out 21, 2018 5:14:08 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@461710')
+out 21, 2018 5:14:08 PM org.apache.catalina.core.ApplicationContext log
+INFORMA합ES: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@18b243a')

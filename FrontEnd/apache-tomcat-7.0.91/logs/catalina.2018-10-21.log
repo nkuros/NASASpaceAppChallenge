@@ -473,3 +473,171 @@ Oct 21, 2018 11:28:55 AM org.apache.coyote.AbstractProtocol start
 INFORMAÇÕES: Starting ProtocolHandler ["ajp-apr-8009"]
 Oct 21, 2018 11:28:55 AM org.apache.catalina.startup.Catalina start
 INFORMAÇÕES: Server startup in 2779 ms
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server version:        Apache Tomcat/7.0.91
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server built:          Sep 13 2018 19:52:12 UTC
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server number:         7.0.91.0
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: OS Name:               Windows 8.1
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: OS Version:            6.3
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Architecture:          x86
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_191\jre
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: JVM Version:           1.8.0_191-b12
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: JVM Vendor:            Oracle Corporation
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: CATALINA_BASE:         C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: CATALINA_HOME:         C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djava.util.logging.config.file=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\conf\logging.properties
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dignore.endorsed.dirs=
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dcatalina.base=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dcatalina.home=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 4:59:09 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djava.io.tmpdir=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\temp
+out 21, 2018 4:59:09 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMAÇÕES: Loaded APR based Apache Tomcat Native library 1.2.17 using APR version 1.6.3.
+out 21, 2018 4:59:09 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMAÇÕES: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+out 21, 2018 4:59:11 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFORMAÇÕES: OpenSSL successfully initialized (OpenSSL 1.0.2o  27 Mar 2018)
+out 21, 2018 4:59:11 PM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-apr-8080"]
+out 21, 2018 4:59:11 PM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["ajp-apr-8009"]
+out 21, 2018 4:59:11 PM org.apache.catalina.startup.Catalina load
+INFORMAÇÕES: Initialization processed in 2291 ms
+out 21, 2018 4:59:11 PM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service Catalina
+out 21, 2018 4:59:11 PM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.91
+out 21, 2018 4:59:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\docs
+out 21, 2018 4:59:12 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+ADVERTÊNCIA: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [109] milliseconds.
+out 21, 2018 4:59:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\docs has finished in 953 ms
+out 21, 2018 4:59:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\examples
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\examples has finished in 641 ms
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\host-manager
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\host-manager has finished in 156 ms
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\manager
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\manager has finished in 156 ms
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT has finished in 110 ms
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT2
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT2 has finished in 109 ms
+out 21, 2018 4:59:13 PM org.apache.coyote.AbstractProtocol start
+INFORMAÇÕES: Starting ProtocolHandler ["http-apr-8080"]
+out 21, 2018 4:59:13 PM org.apache.coyote.AbstractProtocol start
+INFORMAÇÕES: Starting ProtocolHandler ["ajp-apr-8009"]
+out 21, 2018 4:59:13 PM org.apache.catalina.startup.Catalina start
+INFORMAÇÕES: Server startup in 2235 ms
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server version:        Apache Tomcat/7.0.91
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server built:          Sep 13 2018 19:52:12 UTC
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server number:         7.0.91.0
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: OS Name:               Windows 8.1
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: OS Version:            6.3
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Architecture:          x86
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_191\jre
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: JVM Version:           1.8.0_191-b12
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: JVM Vendor:            Oracle Corporation
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: CATALINA_BASE:         C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: CATALINA_HOME:         C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djava.util.logging.config.file=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\conf\logging.properties
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dignore.endorsed.dirs=
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dcatalina.base=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dcatalina.home=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91
+out 21, 2018 5:14:05 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Djava.io.tmpdir=C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\temp
+out 21, 2018 5:14:05 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMAÇÕES: Loaded APR based Apache Tomcat Native library 1.2.17 using APR version 1.6.3.
+out 21, 2018 5:14:05 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMAÇÕES: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+out 21, 2018 5:14:06 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFORMAÇÕES: OpenSSL successfully initialized (OpenSSL 1.0.2o  27 Mar 2018)
+out 21, 2018 5:14:06 PM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-apr-8080"]
+out 21, 2018 5:14:06 PM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["ajp-apr-8009"]
+out 21, 2018 5:14:06 PM org.apache.catalina.startup.Catalina load
+INFORMAÇÕES: Initialization processed in 2271 ms
+out 21, 2018 5:14:06 PM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service Catalina
+out 21, 2018 5:14:06 PM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.91
+out 21, 2018 5:14:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\docs
+out 21, 2018 5:14:07 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+ADVERTÊNCIA: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [109] milliseconds.
+out 21, 2018 5:14:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\docs has finished in 938 ms
+out 21, 2018 5:14:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\examples
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\examples has finished in 656 ms
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\host-manager
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\host-manager has finished in 141 ms
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\manager
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\manager has finished in 140 ms
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT has finished in 125 ms
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT2
+out 21, 2018 5:14:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deployment of web application directory C:\Users\Rodrigo\Desktop\SpaceApps\NASASpaceAppChallenge\FrontEnd\apache-tomcat-7.0.91\webapps\ROOT2 has finished in 94 ms
+out 21, 2018 5:14:08 PM org.apache.coyote.AbstractProtocol start
+INFORMAÇÕES: Starting ProtocolHandler ["http-apr-8080"]
+out 21, 2018 5:14:09 PM org.apache.coyote.AbstractProtocol start
+INFORMAÇÕES: Starting ProtocolHandler ["ajp-apr-8009"]
+out 21, 2018 5:14:09 PM org.apache.catalina.startup.Catalina start
+INFORMAÇÕES: Server startup in 2221 ms

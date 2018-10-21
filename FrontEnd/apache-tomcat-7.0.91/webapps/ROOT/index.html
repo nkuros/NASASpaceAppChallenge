@@ -56,8 +56,8 @@
 				<br>
 				<div ng-controller="ResourceCtrl">
 					<b>Recursos:</b><br>
-					Ciência: {{science.toFixed(2)}}<br>
-					Material: {{material.toFixed(2)}}<br>
+					Ciência: {{science.toFixed(2) + " " + (science_rate?"+" +science_rate+"/ano":"")}}<br>
+					Material: {{material.toFixed(2) + " " + (material_rate?"+" +material_rate+"/ano":"")}}<br>
 					Combustível: {{fuel.toFixed(2)}}<br>
 					Tempo: {{time.toFixed(2)}}<br><br>
 					<button class="btn btn-large btn-default" ng-click="nextSystem()">Próximo sistema</button><br><br>
