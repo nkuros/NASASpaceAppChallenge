@@ -20,7 +20,7 @@ app.controller('ResourceCtrl', function($location, $scope, resourceServices, $ro
 			$rootScope.$broadcast('newSystem', 'Next System');
 		}
 		else{
-			alert('você não possui combustível suficiente para realizar essa operação');
+			alert('Você não possui combustível suficiente para realizar essa operação');
 		}
 	}
 })
