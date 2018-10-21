@@ -1,6 +1,8 @@
-app.controller('HomeCtrl', function($rootScope, $location, $scope)
+app.controller('HomeCtrl', function($rootScope, $location, $scope, nodeService)
 {
+	var system = nodeService.getSystem();
    $rootScope.activetab = $location.path();
    console.log($rootScope.activetab);
-   $scope.message = 'Informações sobre o sistema aqui';
+   $scope.message = system.message;
+   $scope.name = system.name;
 });

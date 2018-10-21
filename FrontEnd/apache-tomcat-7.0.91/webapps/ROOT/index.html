@@ -11,9 +11,11 @@
 			.absolute-right{
 				position:absolute;
 				right:50px;
+				z-index:100;
 			}
 			.absolute-left{
 				position:absolute;
+				z-index:100;
 			}
 		</style>
 		
@@ -23,24 +25,25 @@
     
 		<img src="" id="marker" style="display: none; position: absolute; z-index:9999" />
 
-		<div id="hidden-images">
-
-		</div>
+		
 
 			<!--div ng-view></div-->
 		<div class="container">
 
-			<div class="col-md-8" ng-controller="MainCtrl">
+			<div class="col-md-9" ng-controller="MainCtrl">
+				<div id="hidden-images">
+
+				</div>	
 				<a href="/#home" class="btn btn-default btn-lg absolute-left">
 					<span class="glyphicon glyphicon-arrow-left"></span> Voltar
 				</a>
 				<a href="/#menu" class="btn btn-default btn-lg absolute-right">
 					<span class="glyphicon glyphicon-th-list"></span> Menu
 				</a>
-				<img src="{{img}}" style="height:40rem; width:70rem" id="map"/>
+				<img src="{{img}}" style="height:60rem; width:80rem" id="map"/>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<!-- usa angular para renderizar o menu -->
 				<div ng-view></div>
 			</div>

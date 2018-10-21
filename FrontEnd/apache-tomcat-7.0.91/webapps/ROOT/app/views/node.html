@@ -1,6 +1,6 @@
 <h1>Node</h1>
 {{message}}<br>
-Nome do nó: {{node.name}}<br>
-Tamanho: {{node.size}}<br>
-Custo em Materiais: {{node.size * 1.5}}<br>
-Recompensa: {{node.size * 3}}<br>
+Nome do nó: {{node.name || ''}}<br>
+Tamanho: {{((node.size || 0)).toFixed(2)}}<br>
+Custo em Materiais: {{((node.size || 0) * 1.2).toFixed(2)}}<br>
+Recompensa: {{((node.size || 0) * 3).toFixed(2)}}<br>
