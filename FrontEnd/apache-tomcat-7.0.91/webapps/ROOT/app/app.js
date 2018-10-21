@@ -14,13 +14,13 @@ app.config(function($routeProvider, $locationProvider)
    })
 
    // para a rota '/sobre', carregaremos o template sobre.html e o controller 'SobreCtrl'
-   .when('/sobre', {
+   .when('/menu', {
       templateUrl : 'app/views/menu.html',
       controller  : 'MenuCtrl',
    })
 
    // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
-   .when('/contato', {
+   .when('/node', {
       templateUrl : 'app/views/node.html',
       controller  : 'NodeCtrl',
    })

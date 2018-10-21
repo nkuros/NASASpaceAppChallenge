@@ -1,37 +1,64 @@
 <!doctype html>
 <html ng-app="app">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta http-equiv="content-language" content="pt-br" />
-      <title>AngularJS: Single Page com ngView e ngRoute</title>
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-   </head>
-
-   <body>
-      
-
-      <!--div ng-view></div-->
-	  <div class="container">
-	  
-		<div class="col-md-8">
-			<ul class="nav nav-tabs">
-				<li ng-class="{active: activetab == '/'}"><a href="/#home">Home</a></li>
-				<li ng-class="{active: activetab == '/sobre'}"><a href="/#sobre">Sobre</a></li>
-				<li ng-class="{active: activetab == '/contato'}"><a href="/#contato">Contato</a></li>
-			</ul>
-		</div>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<title>AngularJS: Single Page com ngView e ngRoute</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		
-		<div class="col-md-4">
-			<!-- usa angular para renderizar o menu -->
-			<div ng-view></div>
+		<style>
+			.absolute-right{
+				position:absolute;
+				right:50px;
+			}
+			.absolute-left{
+				position:absolute;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+    
+		<img src="" id="marker" style="display: none; position: absolute; z-index:9999" />
+
+		<div id="hidden-images">
+
 		</div>
-	  
-	  </div>
 
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+			<!--div ng-view></div-->
+		<div class="container">
 
-      <script src="app/app.js"></script>
-      <script src="app/controllers/controllers.js"></script>
-   </body>
+			<div class="col-md-8" ng-controller="MainCtrl">
+				<a href="/#home" class="btn btn-default btn-lg absolute-left">
+					<span class="glyphicon glyphicon-arrow-left"></span> Voltar
+				</a>
+				<a href="/#menu" class="btn btn-default btn-lg absolute-right">
+					<span class="glyphicon glyphicon-th-list"></span> Menu
+				</a>
+				<img src="{{img}}" style="height:40rem; width:70rem" id="map"/>
+			</div>
+
+			<div class="col-md-4">
+				<!-- usa angular para renderizar o menu -->
+				<div ng-view></div>
+			</div>
+
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+		<script src="app/app.js"></script>
+		<script src="app/services/nodeServices.js"></script>
+		<script src="app/controllers/NodeCtrl.js"></script>
+		<script src="app/controllers/MenuCtrl.js"></script>
+		<script src="app/controllers/MainCtrl.js"></script>
+		<script src="app/controllers/HomeCtrl.js"></script>
+		  
+		<script type="text/javascript">
+		
+		</script>
+	</body>
 </html>
